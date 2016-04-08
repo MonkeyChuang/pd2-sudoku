@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <cstdlib>
 using namespace std;
 
 class Sudoku
@@ -16,7 +17,7 @@ class Sudoku
 		void flip(int dir);
 		void transform();
 		void solve();
-		
+
 	private:
 		static const int Sudo_size=81;
 		int map[Sudo_size];
@@ -25,7 +26,7 @@ class Sudoku
 		int ans1[Sudo_size];
 		int depth;
 		int max_depth;
-		
+
 		void interChange(int *a,int *b);
 		void setMaxdepth();
 		int findSquare(int loc);
@@ -34,5 +35,3 @@ class Sudoku
 		bool isCorrect();
 		void preJudge();
 };
-		
-	
